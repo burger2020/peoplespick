@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">픽픽</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="section_home">PIC PIC</string>
+    <string name="section_interest">관심 태그</string>
+    <string name="section_popular">인기 사진</string>
+    <string name="section_result">내 결과</string>
+</resources>

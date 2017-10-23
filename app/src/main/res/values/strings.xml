@@ -1,4 +1,12 @@
 <resources>
+
+    <!--basic-->
+    <string name="Yes">네</string>
+    <string name="No">아니요</string>
+    <string name="Pick">선택</string>
+    <string name="Cancel">취소</string>
+
+    <!--Main-->
     <string name="app_name">픽픽</string>
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
@@ -6,4 +14,30 @@
     <string name="section_interest">관심 태그</string>
     <string name="section_popular">인기 사진</string>
     <string name="section_result">내 결과</string>
+
+    <!--Edit image -->
+
+    <string name="edit_tool_next">다음</string>
+    <string name="edit_tool_produce">완료</string>
+    <string name="edit_tool_pick_photo">사진 선택</string>
+
+    <string name="edit_photo_next_false_comment">2장이상의 사진을 선택해야 \n비교를 할수있어요!</string>
+
+
+    <string name="edit_option_rating_time">평가 시간</string>
+    <string name="edit_option_rep_photo">대표 사진</string>
+    <string name="edit_option_recomment_set">댓글 기능</string>
+    <string name="edit_option_friend_invisible">친구에게 숨기기</string>
+    <string name="edit_option_capture">사진 캡쳐</string>
+    <string name="edit_option_mosaic">대표 사진 모자이크</string>>
+    <string name="edit_option_comment_hint">욕설 및 상대방에게 불쾌감을 유발하는 내용은 \n삭제될 수 있어요.</string>
+
+    <string name="edit_photo_pick_dialog_comment1">번째 비교사진 등록</string>
+    <string name="edit_photo_pick_dialog_comment2">더 많은 사진들을\n비교해 보세요!</string>
+    <string name="edit_photo_pick_dialog_comment3">구매 하기</string>
+
+    <string name="edit_backPress_title">게시 취소</string>
+    <string name="edit_backPress_comment">게시를 취소하시겠습니까?\n입력한 데이터가 모두 사라집니다.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

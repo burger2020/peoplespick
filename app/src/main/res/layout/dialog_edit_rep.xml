@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/eid_dialog_select_photo_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+    <!--<LinearLayout-->
+        <!--android:background="@color/colorMain_mini"-->
+        <!--android:gravity="right"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<TextView-->
+            <!--android:textColor="@color/colorBlack"-->
+            <!--android:id="@+id/edit_dialog_rep_no"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/Cancel"/>-->
+        <!--<TextView-->
+            <!--android:textColor="@color/colorBlack"-->
+            <!--android:id="@+id/edit_dialog_rep_yes"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/Pick"/>-->
+    <!--</LinearLayout>-->
+
+</LinearLayout>

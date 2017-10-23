@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.main_user.profile_rating.bottom_menu_activity.Edit_frag_first"
+    android:orientation="vertical">
+    <FrameLayout
+        android:gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/edit_select_images_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </android.support.v7.widget.RecyclerView>
+        <!--사진 더있는거 표시-->
+        <ImageView
+            android:id="@+id/edit_photo_more_image"
+            android:visibility="gone"
+            android:background="@mipmap/ic_edit_list_more"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right|center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+    <ImageView
+        android:background="@color/colorMain_mini"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+    <GridView
+        android:id="@+id/edit_rating_photo_gallery"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="2dp"
+        android:verticalSpacing="2dp"
+        android:numColumns="4"></GridView>
+</LinearLayout>

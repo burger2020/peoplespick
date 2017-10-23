@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:minHeight="?attr/actionBarSize"
+    android:layout_alignParentTop="true">
+    <ImageView
+        android:id="@+id/actionbar_setting_image"
+        android:background="@mipmap/ic_actionbar_setting"
+        android:layout_gravity="left|center_vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/actionbar_title_text"
+        android:text="PIC PIC"
+        android:textStyle="bold"
+        android:textColor="@color/colorMain"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:background="@mipmap/ic_actionbar_shopping"
+        android:layout_gravity="right|center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

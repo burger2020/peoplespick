@@ -17,7 +17,6 @@ class Home_frag : Fragment() {
         return rootView
     }
 
-
     companion object {
         fun newInstance(): Home_frag {
             val fragment = Home_frag()

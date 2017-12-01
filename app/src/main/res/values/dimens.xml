@@ -4,4 +4,27 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="toolbar_text_size">18sp</dimen>
+    <dimen name="toolbar_height_size">50dp</dimen>
+    <dimen name="tablayout_height_size">35dp</dimen>
+    <dimen name="bottomnavigation_height_size">40dp</dimen>
+    <dimen name="option_text_size">17sp</dimen>
+    <dimen name="auth_sign_up_size">15sp</dimen>
+    <dimen name="big_text_size">13sp</dimen>
+    <dimen name="basic_text_size">13sp</dimen>
+    <dimen name="small_text_size">11sp</dimen>
+
+
+    <dimen name="result_text_size_1000">10px</dimen>
+    <dimen name="result_text_size_100">12px</dimen>
+    <dimen name="result_text_size_10">14px</dimen>
+    <dimen name="result_text_size_1">16px</dimen>
+
+    <dimen name="result_scroll_text_size_1000">13px</dimen>
+    <dimen name="result_scroll_text_size_100">15px</dimen>
+    <dimen name="result_scroll_text_size_10">17px</dimen>
+    <dimen name="result_scroll_text_size_1">19px</dimen>
+
+    <dimen name="design_bottom_navigation_active_text_size">12sp</dimen>
+
 </resources>

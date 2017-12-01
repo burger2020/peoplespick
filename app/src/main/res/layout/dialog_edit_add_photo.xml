@@ -13,6 +13,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <TextView
+                android:textColor="@color/PrimaryTextColor"
                 android:id="@+id/edit_photo_dialog_comment"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
@@ -22,6 +23,7 @@
                 android:textSize="25sp"
                 android:text="@string/edit_photo_pick_dialog_comment1"/>
             <TextView
+                android:textColor="@color/SecondaryTextColor"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -37,12 +39,13 @@
             android:orientation="vertical">
             <ImageView
                 android:layout_gravity="top"
-                android:background="@color/colorMain_mini"
+                android:background="@color/DividerColor"
                 android:layout_width="match_parent"
                 android:layout_height="1dp" />
             <TextView
                 android:layout_weight="1"
-                android:textColor="@color/colorMain"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/TextOrIcon"
                 android:textSize="20sp"
                 android:text="@string/edit_photo_pick_dialog_comment3"
                 android:gravity="center"

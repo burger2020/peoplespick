@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:background="@color/TextOrIcon"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/profile_data"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:background="@mipmap/ic_non_profile"
+                android:id="@+id/poster_profile_image_"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+            <TextView
+                android:id="@+id/poster_profile_name_"
+                android:textColor="@color/PrimaryTextColor"
+                android:textSize="13sp"
+                android:paddingLeft="10dp"
+                android:layout_gravity="center"
+                android:hint="사용자 이름"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="right"
+                android:layout_weight="1"
+                android:id="@+id/post_on_time_"
+                android:textSize="13sp"
+                android:hint="생성 시간"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/rating_photo_container_"
+            android:background="@drawable/border_top_bottom"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--<ImageView-->
+            <!--android:background="@color/TextOrIcon"-->
+            <!--android:id="@+id/rating_photos"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+            <GridView
+                android:scrollbars="none"
+                android:background="@color/TextOrIcon"
+                android:verticalSpacing="2dp"
+                android:horizontalSpacing="2dp"
+                android:layout_weight="1"
+                android:id="@+id/rating_photos_list_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></GridView>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:paddingTop="2dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1"
+                    android:id="@+id/grid_img_1_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:paddingTop="2dp"
+                    android:layout_weight="1"
+                    android:id="@+id/grid_img_2_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <!--<GridView-->
+                <!--android:background="@color/colorBlack"-->
+                <!--android:layout_weight="1"-->
+                <!--android:visibility="gone"-->
+                <!--android:numColumns="2"-->
+                <!--android:id="@+id/rating_photos_list_"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"></GridView>-->
+
+            <!--<com.felipecsl.asymmetricgridview.library.widget.AsymmetricGridView-->
+                <!--android:scrollbars="none"-->
+                <!--android:divider="@color/TextOrIcon"-->
+                <!--android:dividerHeight="3dp"-->
+                <!--android:id="@+id/rating_photos_list"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:fadingEdge="none"-->
+                <!--android:focusable="false"-->
+                <!--android:gravity="center"-->
+                <!--android:listSelector="@color/TextOrIcon"-->
+                <!--android:background="@color/TextOrIcon"-->
+                <!--android:isScrollContainer="false"/>-->
+            <!--사진 갯수 표시 필요없을듯-->
+            <!--<TextView-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:background="@drawable/shape_"-->
+            <!--android:layout_gravity="left|top"-->
+            <!--android:gravity="center"-->
+            <!--android:id="@+id/photo_num_txt"-->
+            <!--android:text="+ a"-->
+            <!--android:textSize="15sp"-->
+            <!--android:textColor="@color/TextOrIcon"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"/>-->
+        </LinearLayout>
+        <LinearLayout
+            android:minHeight="120dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:orientation="vertical"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:maxLines="4"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="6"
+                    android:id="@+id/rating_comment_txt_"
+                    android:layout_marginTop="5dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/PrimaryTextColor"
+                    android:layout_gravity="top"
+                    android:gravity="top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:letterSpacing="0.03"
+                    android:textColor="@color/PrimaryTextColor"
+                    android:gravity="right"
+                    android:id="@+id/rating_time_text_"
+                    android:lineSpacingExtra ="5dp"
+                    android:textSize="@dimen/big_text_size"
+                    android:hint="평가가 종료되었습니다."
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="top|right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:layout_gravity="left|bottom"
+                    android:background="@drawable/shape_"
+                    android:src="@mipmap/ic_post_delete"
+                    android:id="@+id/delete_button_"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp" />
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:id="@+id/custom_button_"
+                    android:layout_gravity="left|bottom"
+                    android:src="@mipmap/ic_post_custom"
+                    android:background="@drawable/shape_"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp" />
+                <android.support.v4.widget.Space
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:layout_gravity="right|bottom"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"
+                    android:id="@+id/rating_check_layer_"
+                    android:src="@mipmap/ic_rating_check"
+                    android:background="@drawable/shape_"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <ImageView
+                    android:layout_gravity="right|bottom"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"
+                    android:id="@+id/comment_check_layer_"
+                    android:src="@mipmap/ic_comment_check"
+                    android:background="@drawable/shape_"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

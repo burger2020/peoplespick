@@ -1,12 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#E91E63</color>
+    <color name="colorPrimaryDark">#C2185B</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="colorMain">#FF4081</color>
+    <color name="colorAccentAlpha">#99FF4081</color>
+
+    <color name="LightPrimaryColor">#F8BBD0</color>
+    <color name="TextOrIcon">#FFFFFF</color>
+    <color name="PrimaryTextColor">#212121</color>
+    <color name="SecondaryTextColor">#757575</color>
+    <color name="DividerColor">#BDBDBD</color>
+    <color name="DividerColor_">#C0BDBD</color>
+
+    <color name="BackgroundColor">#faeeee</color>
+
+    <array name="InterestTagColor">
+        <item>#ad1457</item>
+        <item>#c2185b</item>
+        <item>#d81b60</item>
+        <item>#e91e63</item>
+        <item>#ec407a</item>
+        <item>#f06292</item>
+        <item>#f48fb1</item>
+        <item>#f8bbd0</item>
+        <item>#fce4ec</item>
+    </array>
+
     <color name="colorMain_mini">#F8BBD0</color>
+    <color name="colorMain_mini_A">#aaF8BBD0</color>
     <color name="colorWhite">#ffffff</color>
     <color name="colorNonclick">#aaaaaa</color>
+    <color name="colorBack_Gray">#dddddd</color>
     <color name="colorBlack">#000000</color>
+    <color name="colorBlack_alpha">#88000000</color>
+    <color name="colorBlack_alpha_mini">#99000000</color>
+    <color name="colorWhite_alpha">#88ffffff</color>
+    <color name="colorTag">#FF4081</color>
+    <color name="colorMain2">#fffafa</color>
 
 </resources>

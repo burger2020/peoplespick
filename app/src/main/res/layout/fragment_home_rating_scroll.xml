@@ -1,0 +1,78 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:background="@color/PrimaryTextColor"
+        android:id="@+id/widget_photoview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"/>
+    <FrameLayout
+        android:id="@+id/rate_non_layout"
+        android:padding="10dp"
+        android:layout_gravity="right|top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/heart_background"
+            android:background="@drawable/shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/heart_image"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+    <FrameLayout
+        android:visibility="gone"
+        android:padding="10dp"
+        android:id="@+id/rate_ok_layout"
+        android:layout_gravity="right|top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_marginRight="35dp"
+            android:layout_gravity="right|top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/heart_background_rate"
+                android:background="@drawable/shape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/heart_image_rate"
+                android:background="@mipmap/ic_home_rating_heart_non"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_gravity="right|top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/heart_text_background_rate"
+                android:background="@drawable/shape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:text="8"
+                android:textSize="19sp"
+                android:textColor="@color/TextOrIcon"
+                android:id="@+id/heart_text_rate"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

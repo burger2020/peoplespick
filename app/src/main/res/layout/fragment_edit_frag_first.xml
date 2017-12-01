@@ -2,7 +2,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.main_user.profile_rating.bottom_menu_activity.Edit_frag_first"
     android:orientation="vertical">
     <FrameLayout
         android:gravity="right"
@@ -25,7 +24,7 @@
             android:layout_height="wrap_content" />
     </FrameLayout>
     <ImageView
-        android:background="@color/colorMain_mini"
+        android:background="@color/DividerColor"
         android:layout_width="match_parent"
         android:layout_height="2dp"/>
     <GridView

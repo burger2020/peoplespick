@@ -1,11 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/BackgroundColor"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/TextOrIcon">
+        <android.support.design.widget.AppBarLayout
+            android:background="@color/TextOrIcon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.cunoraz.tagview.TagView
+                app:layout_scrollFlags="scroll|enterAlways"
+                xmlns:tagview="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/tag_group"
+                android:minHeight="70dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                tagview:lineMargin="5dp"
+                tagview:tagMargin="5dp"
+                tagview:textPaddingLeft="8dp"
+                tagview:textPaddingTop="5dp"
+                tagview:textPaddingRight="8dp"
+                tagview:textPaddingBottom="5dp" />
+            <View
+                android:layout_gravity="bottom"
+                android:background="@drawable/shadow"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+        </android.support.design.widget.AppBarLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/BackgroundColor"
+            android:id="@+id/interest_layer"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:visibility="visible"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/interest_post_swipe_layout">
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/interest_List"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </android.support.v7.widget.RecyclerView>
+            </android.support.v4.widget.SwipeRefreshLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="45dp" />
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="this view if main fragment"/>
-
+        android:layout_marginBottom="70dp"
+        android:visibility="gone"
+        android:textColor="@color/SecondaryTextColor"
+        android:id="@+id/interest_empty_text"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:text="@string/inter_tag_non"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:background="@color/colorWhite"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:id="@+id/interestPost_empty_text"
+        android:gravity="center"
+        android:textColor="@color/PrimaryTextColor"
+        android:text="@string/search_result_non"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </LinearLayout>

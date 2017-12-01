@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/toolbar_height_size">
+
+    <ImageView
+        android:layout_marginLeft="-10dp"
+        android:background="@mipmap/ic_edit_toolbar_back"
+        android:id="@+id/comment_back_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="@color/TextOrIcon"
+        android:textSize="@dimen/toolbar_text_size"
+        android:gravity="center"
+        android:text="@string/recomment_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

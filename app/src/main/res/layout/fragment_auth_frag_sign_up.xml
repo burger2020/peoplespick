@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="picturePick.picture.main_user.profile_rating.Auth.Auth_frag_sign_up"
+    android:orientation="vertical">
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:visibility="gone"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:textColor="@color/PrimaryTextColor"
+        android:id="@+id/disname_comment"
+        android:text="@string/auth_google_nickName"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:textColor="@color/PrimaryTextColor"
+        android:inputType="textEmailAddress"
+        android:textSize="@dimen/auth_sign_up_size"
+        android:id="@+id/auth_custom_sign_ip_email_txt"
+        android:padding="20dp"
+        android:hint="@string/auth_custom_sign_up_Uemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:lines="1"
+        android:layout_gravity="center"
+        android:textColor="@color/PrimaryTextColor"
+        android:textSize="@dimen/auth_sign_up_size"
+        android:padding="20dp"
+        android:hint="@string/auth_custom_sign_up_Uname"
+        android:id="@+id/auth_custom_sign_ip_name_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:textColor="@color/PrimaryTextColor"
+        android:inputType="textPassword"
+        android:textSize="@dimen/auth_sign_up_size"
+        android:padding="20dp"
+        android:hint="@string/auth_custom_sign_up_Upass"
+        android:id="@+id/auth_custom_sign_ip_pass_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:textColor="@color/PrimaryTextColor"
+        android:inputType="textPassword"
+        android:textSize="@dimen/auth_sign_up_size"
+        android:padding="20dp"
+        android:layout_marginBottom="30dp"
+        android:hint="@string/auth_custom_sign_up_Upass_re"
+        android:id="@+id/auth_custom_sign_ip_repass_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_weight="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:background="@color/colorPrimary"
+        android:textColor="@color/TextOrIcon"
+        android:layout_marginRight="-10dp"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginBottom="-5dp"
+        android:layout_gravity="bottom"
+        android:text="@string/auth_custom_sign_up_complete"
+        android:id="@+id/custom_complete_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

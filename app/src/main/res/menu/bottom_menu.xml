@@ -5,20 +5,20 @@
         android:id="@+id/bottom_menu_home"
         app:showAsAction="always"
         android:icon="@mipmap/ic_bottom_home"
-        android:title="홈" />
+        android:title=" "  />
     <item
         android:id="@+id/bottom_menu_search"
         app:showAsAction="always"
         android:icon="@mipmap/ic_bottom_search"
-        android:title="검색" />
+        android:title=" " />
     <item
         android:id="@+id/bottom_menu_new"
         app:showAsAction="always"
         android:icon="@mipmap/ic_bottom_edit"
-        android:title="글 쓰기" />
+        android:title=" " />
     <item
         android:id="@+id/bottom_menu_alarm"
         app:showAsAction="always"
         android:icon="@mipmap/ic_bottom_alarm"
-        android:title="알림"/>
+        android:title=" " />
 </menu>

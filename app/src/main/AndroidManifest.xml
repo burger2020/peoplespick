@@ -1,21 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.main_user.profile_rating">
+    package="picturePick.picture.main_user.profile_rating">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <action android:name="android.intent.action.PACKAGE_ADDED" />
+    <action android:name="android.intent.action.PACKAGE_REMOVED" />
 
     <application
+        android:screenOrientation="portrait"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
+        android:name="android.support.multidex.MultiDexApplication"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:windowSoftInputMode="adjustNothing"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="adjustNothing">
+        <meta-data android:name="com.google.android.backup.api_key" android:value="AEdPqrEAAAAIuoEKK-SKcHLcgVpdT5FXr5GIJQ549bECyaexyQ" />
         <activity
-            android:windowSoftInputMode="adjustNothing"
-            android:name=".MainActivity"
-            android:label="@string/app_name">
+            android:label="@string/title_activity_auth__main"
+            android:name=".Auth.Auth_MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,11 +33,49 @@
             </intent-filter>
         </activity>
 
-        <Fragment android:name="com.example.main_user.profile_rating.swipe_fragment.Home_frag" />
+        <Fragment android:name="picturePick.picture.main_user.profile_rating.swipe_fragment.Home_frag" />
 
-        <activity android:name=".bottom_menu_activity.Edit_Activity"
-            android:windowSoftInputMode="adjustNothing">
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustNothing"
+            android:label="@string/app_name"
+            android:name=".MainActivity" >
+
         </activity>
+        <activity
+            android:name=".bottom_menu_activity.Edit_Activity"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity android:name=".swipe_fragment.Home_raing_activity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity
+            android:name=".swipe_fragment.Home_rating_scroll"
+            android:label="@string/title_activity_home_rating_scroll"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Option.Option_Activity"
+            android:label="@string/title_activity_option_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".swipe_fragment.Home_posting_comment"
+            android:label="@string/title_activity_home_poting_comment_list" />
+        <activity
+            android:name=".swipe_fragment.Post_Custom_act"
+            android:label="@string/title_activity_post__custom_act"
+            android:windowSoftInputMode="adjustNothing" ></activity>
+
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+
+        <!--<receiver android:name=".BroadCast.AppRemove">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.PACKAGE_ADDED"/>-->
+                <!--<action android:name="android.intent.action.PACKAGE_REMOVED"/>-->
+                <!--<action android:name="android.intent.action.PACKAGE_REPLACED"/>-->
+                <!--<data android:scheme="package"/>-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
     </application>
 
 </manifest>

@@ -1,13 +1,62 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<FrameLayout
+    android:background="@color/BackgroundColor"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.main_user.profile_rating.bottom_menu_activity.Edit_frag_first">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    android:layout_height="match_parent">
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:background="@color/BackgroundColor"
+        android:id="@+id/search_result_layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_post_swipe_layout">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/search_post_rating_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <TextView
+            android:textColor="@color/SecondaryTextColor"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:id="@+id/search_empty_text"
+            android:gravity="center"
+            android:text="@string/search_result_non"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/BackgroundColor"
+        android:visibility="gone"
+        android:id="@+id/search_history_layer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Hello Search Fragment!" />
+        android:orientation="vertical">
+        <TextView
+            android:textSize="13sp"
+            android:layout_margin="10dp"
+            android:text="@string/search_actionbar_searched_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.RecyclerView
+            android:background="@drawable/border_bottom"
+            android:id="@+id/tag_history_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
 
 </FrameLayout>

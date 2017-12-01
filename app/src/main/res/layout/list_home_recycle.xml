@@ -1,73 +1,226 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:background="@color/TextOrIcon"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <android.support.v7.widget.CardView
-        android:background="@android:drawable/btn_default_small"
-        card_view:cardCornerRadius="7dp"
-        android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/TagDividerLayer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <LinearLayout
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/TagDividerTxt"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:textColor="@color/colorAccent"
+            android:text="#TAG"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/profile_data"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:background="@mipmap/ic_non_profile"
+                android:id="@+id/poster_profile_image"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+            <TextView
+                android:id="@+id/poster_profile_name"
+                android:textColor="@color/PrimaryTextColor"
+                android:textSize="13sp"
+                android:paddingLeft="10dp"
+                android:layout_gravity="center"
+                android:hint="사용자 이름"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="right"
+                android:layout_weight="1"
+                android:id="@+id/post_on_time"
+                android:textSize="13sp"
+                android:hint="생성 시간"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/rating_photo_container"
+            android:background="@drawable/border_top_bottom"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
-            <FrameLayout
-                android:layout_gravity="top"
+            <!--<ImageView-->
+            <!--android:background="@color/TextOrIcon"-->
+            <!--android:id="@+id/rating_photos"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+            <GridView
+                android:scrollbars="none"
+                android:background="@color/TextOrIcon"
+                android:verticalSpacing="2dp"
+                android:horizontalSpacing="2dp"
+                android:layout_weight="1"
+                android:id="@+id/rating_photos_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></GridView>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <ImageView
-                    android:id="@+id/rating_photo"
-                    android:layout_width="match_parent"
+                    android:paddingTop="2dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1"
+                    android:id="@+id/grid_img_1"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent" />
-                <TextView
-                    android:id="@+id/photo_num_txt"
-                    android:text="+ a"
-                    android:textSize="30sp"
-                    android:textColor="@color/colorMain"
-                    android:paddingRight="15dp"
-                    android:layout_gravity="right|center"
+                <ImageView
+                    android:paddingTop="2dp"
+                    android:layout_weight="1"
+                    android:id="@+id/grid_img_2"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-            </FrameLayout>
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <!--<GridView-->
+                <!--android:background="@color/colorBlack"-->
+                <!--android:layout_weight="1"-->
+                <!--android:visibility="gone"-->
+                <!--android:numColumns="2"-->
+                <!--android:id="@+id/rating_photos_list_"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"></GridView>-->
+
+            <!--<com.felipecsl.asymmetricgridview.library.widget.AsymmetricGridView-->
+                <!--android:scrollbars="none"-->
+                <!--android:divider="@color/TextOrIcon"-->
+                <!--android:dividerHeight="3dp"-->
+                <!--android:id="@+id/rating_photos_list"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:fadingEdge="none"-->
+                <!--android:focusable="false"-->
+                <!--android:gravity="center"-->
+                <!--android:listSelector="@color/TextOrIcon"-->
+                <!--android:background="@color/TextOrIcon"-->
+                <!--android:isScrollContainer="false"/>-->
+            <!--사진 갯수 표시 필요없을듯-->
+            <!--<TextView-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:background="@drawable/shape_"-->
+            <!--android:layout_gravity="left|top"-->
+            <!--android:gravity="center"-->
+            <!--android:id="@+id/photo_num_txt"-->
+            <!--android:text="+ a"-->
+            <!--android:textSize="15sp"-->
+            <!--android:textColor="@color/TextOrIcon"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"/>-->
+        </LinearLayout>
+        <LinearLayout
+            android:minHeight="120dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:orientation="vertical"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
             <LinearLayout
-                android:paddingLeft="10dp"
-                android:orientation="vertical"
-                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent">
                 <TextView
-                    android:id="@+id/rater_num_txt"
-                    android:hint="참가자 수"
-                    android:textSize="15sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-                <TextView
+                    android:maxLines="4"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="6"
                     android:id="@+id/rating_comment_txt"
-                    android:textSize="18sp"
-                    android:hint="코멘트"
-                    android:layout_gravity="bottom"
+                    android:layout_marginTop="5dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/PrimaryTextColor"
+                    android:layout_gravity="top"
+                    android:gravity="top"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <TextView
-                    android:id="@+id/recomment_num_txt"
-                    android:textSize="15sp"
-                    android:hint="댓글 수"
-                    android:layout_gravity="bottom"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-                <TextView
+                    android:letterSpacing="0.03"
+                    android:textColor="@color/PrimaryTextColor"
+                    android:gravity="right"
                     android:id="@+id/rating_time_text"
-                    android:textSize="10sp"
-                    android:hint="종료 까지"
-                    android:layout_gravity="bottom"
+                    android:lineSpacingExtra ="5dp"
+                    android:textSize="@dimen/big_text_size"
+                    android:hint="평가가 종료되었습니다."
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="top|right"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:layout_gravity="left|bottom"
+                    android:background="@drawable/shape_"
+                    android:src="@mipmap/ic_post_delete"
+                    android:id="@+id/delete_button"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp" />
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:id="@+id/custom_button"
+                    android:layout_gravity="left|bottom"
+                    android:src="@mipmap/ic_post_custom"
+                    android:background="@drawable/shape_"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp" />
+                <android.support.v4.widget.Space
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:layout_gravity="right|bottom"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"
+                    android:id="@+id/rating_check_layer"
+                    android:src="@mipmap/ic_rating_check"
+                    android:background="@drawable/shape_"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <ImageView
+                    android:layout_gravity="right|bottom"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"
+                    android:id="@+id/comment_check_layer"
+                    android:src="@mipmap/ic_comment_check"
+                    android:background="@drawable/shape_"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+            </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
-
+    </LinearLayout>
 </LinearLayout>

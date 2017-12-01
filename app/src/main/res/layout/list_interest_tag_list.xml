@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="20dp">
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:id="@+id/tag_list_layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/colorWhite"
+            android:text="# "
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/tag_name"
+            android:text="관심 태그"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_gravity="right"
+            android:src="@mipmap/ic_interest_delete_btn"
+            android:id="@+id/list_change_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
